@@ -477,25 +477,278 @@ button {
 ?     QUALITY 
 ? ===============
 */
+.quality {
+  background-color: #fff;
+}
+
+.quality__content {
+  row-gap: 2.5rem;
+}
+
+.quality__images {
+  position: relative;
+  justify-self: center;
+}
+
+.quality__img-big,
+.quality__img-small {
+  border-radius: 0.5rem;
+}
+
+.quality__img-big {
+  width: 280px;
+}
+
+.quality__img-small {
+  width: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  transform: translateX(-5rem);
+}
+
+.quality__title,
+.quality__price {
+  font-size: var(--h1-font-size);
+}
+
+.quality__title {
+  margin-bottom: 0.75rem;
+}
+
+.quality__price {
+  margin-bottom: 0.25rem;
+}
+
+.quality__special {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 0.75rem;
+}
+
+.quality__description {
+  margin-bottom: 2.5rem;
+}
+
+.quality__buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.quality__button {
+  font-size: var(--normal-font-size);
+  text-transform: uppercase;
+  color: var(--title-color);
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.75rem;
+}
+
+.quality__button i {
+  font-size: 1.25rem;
+  transition: 0.4s;
+}
+
+.quality__button:hover i {
+  transform: translateX(0.25rem);
+}
 
 /*
 ? ===============
 ?     LOGOS 
 ? ===============
 */
+.logo {
+  background-color: #fff;
+}
 
+.logo__container {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem 2rem;
+  border-top: 1px solid var(--text-color-light);
+  padding-top: 2.5rem;
+}
+
+.logo__img {
+  width: 80px;
+  mix-blend-mode: luminosity;
+  opacity: 0.4;
+  transition: 0.4s;
+}
+
+.logo__img:hover {
+  opacity: 0.8;
+}
 /*
 ? ===============
 ?     BLOG 
 ? ===============
 */
+.blog__container {
+  padding-bottom: 2rem;
+}
+
+.blog__content {
+  row-gap: 3rem;
+}
+
+.blog__image {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.blog__img {
+  border-radius: 0.5rem;
+}
+
+.blog__button {
+  display: inline-flex;
+  background-color: #fff;
+  padding: 1.15rem;
+  border-radius: 0.5rem 0 0.5rem 0;
+  font-size: 2rem;
+  color: var(--title-color);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.blog__button i {
+  transform: rotate(-30deg);
+  transition: 0.4s;
+}
+
+.blog__button:hover i {
+  transform: rotate(-30deg) translateX(0.25rem);
+}
+
+.blog__title {
+  font-size: var(--h2-font-size);
+  margin-bottom: 0.75rem;
+}
+
+.blog__description {
+  margin-bottom: 1.5rem;
+}
+
+.blog__footer,
+.blog__reaction {
+  display: flex;
+  align-items: center;
+}
+
+.blog__footer {
+  column-gap: 1.5rem;
+}
+
+.blog__reaction {
+  column-gap: 0.25rem;
+}
+
+.blog__reaction i {
+  font-size: 1.25rem;
+}
+
+.blog__reaction span {
+  font-size: var(--small-font-size);
+}
 
 /*
 ? ===============
 ?     FOOTER 
 ? ===============
 */
+.footer {
+  background-color: var(--black-color);
+  padding: 4rem 0 2.5rem;
+}
 
+.footer__title {
+  color: #fff;
+  font-size: var(--h1-font-size);
+  margin-bottom: 2rem;
+}
+
+.footer__description {
+  margin-bottom: 0.75rem;
+}
+
+.footer__newsletter {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.footer__input {
+  border: none;
+  outline: none;
+  padding: 1.25rem 1rem;
+  border-radius: 0.25rem;
+  width: 70%;
+  color: var(--text-color);
+}
+
+.footer__button {
+  padding: 0.75rem;
+  font-size: 2rem;
+  border-radius: 0.25rem;
+  display: inline-flex;
+  background-color: var(--first-color);
+}
+
+.footer__button i {
+  transform: rotate(-30deg);
+  transition: 0.4s;
+}
+
+.footer__button:hover i {
+  transform: rotate(-30deg) translateX(0.25rem);
+}
+
+.footer__content {
+  row-gap: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--text-color);
+}
+.footer__subtitle {
+  color: #fff;
+  font-size: var(--h2-font-size);
+  margin-bottom: 0.75rem;
+}
+
+.footer__flag {
+  width: 1rem;
+}
+
+.footer__group {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.footer__social-link {
+  color: #fff;
+  transition: 0.4s;
+}
+.footer__social-link:hover {
+  color: var(--first-color);
+}
+
+.footer__copy {
+  font-size: var(--smaller-font-size);
+}
 /*
 ? ===============
 ?    SCROLL BAR 
